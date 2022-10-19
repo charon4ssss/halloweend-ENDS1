@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬¿Sale su Película?🎬</title>
+    <style>
+        .body {
+            background-color: brown;
+            text-align: center;
+        }
+
+        .body__tittle {
+            color: blue;
+        }
+
+        .body__img {
+            width: 50%;
+            border-radius: 0%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__tittle">🎬¿Sale su Película?🎬</h1>
+    <img 
+    src="https://cdn.theplaylist.net/wp-content/uploads/2022/08/23143656/halloween-ends.jpg" 
+    alt="Foto de la Película" class="body__img" />
+<button id="yes">SI, DE UNA</button>
+<button id="no">NALGAS</button>
+
+<script>
+   const vutonSi = document.getElementById('yes');
+   const vutonNo = document.getElementById('no');
+
+   const GoPeGo = () => {
+    alert('Ya Aceptaste ahora no puedes negarte');
+    alert('SOMOS O NO SOMOS?');
+    location.href = 'https://www.youtube.com/watch?v=QJ-nJ2o9Hlo';
+   }
+   const NoPresionar = () => {
+    vutonNo.style.position = 'absolute'; 
+    vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+    vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+   }
+
+   vutonSi.addEventListener('click', GoPeGo);
+   vutonNo.addEventListener('mouseover', NoPresionar);
+</script>
+</body>
+
+</html>
